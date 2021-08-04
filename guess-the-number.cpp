@@ -12,23 +12,25 @@ int main() {
     int i = 0;
 
     cout << "The secrete number ranges from 0 to 10\n";
-    cout << "You have 3 chances\n\n";
+    cout << "You have 4 chances\n\n";
 
     cout << "Guess the secrete number: ";
     cin >> value;
-     if(value < 0 || value > 10)
+    
+    
+     if(value < 0 || value > 10) // ensure user chooses from the correct range
         {
             cout << "\nYour number should range from 0 to 10\n\n";
         }
 
-    while(value != secreteNum && i != 2)
+    while(value != secreteNum && i != 3)
     {
             cout << "Try again: ";
             cin >> value;
             i++;
             if(value < 0 || value > 10)
         {
-            cout << "\nYour number should range from 0 to 10\n\n";
+            cout << "\nYour number should range from 0 to 10\n\n"; // ensure user chooses from the correct range
         }
 
     }
