@@ -12,7 +12,7 @@ int main() {
     int i = 0;
 
     cout << "The secrete number ranges from 0 to 10\n";
-    cout << "You have 5 chances\n\n";
+    cout << "You have 3 chances\n\n";
 
     cout << "Guess the secrete number: ";
     cin >> value;
@@ -21,7 +21,7 @@ int main() {
             cout << "\nYour number should range from 0 to 10\n\n";
         }
 
-    while(value != secreteNum && i != 4)
+    while(value != secreteNum && i != 2)
     {
             cout << "Try again: ";
             cin >> value;
