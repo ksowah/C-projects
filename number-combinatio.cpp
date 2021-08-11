@@ -1,4 +1,5 @@
-
+#include<iostream>
+#include <cstdlib>  // Enables use of rand()
 #include<iostream>
 using namespace std;
 
@@ -103,7 +104,7 @@ int main()
 
     int combination = top / (finalDenomenator);
 
-    cout << "The answer is: " << combination << endl;
+    cout << "\'" << copyOfn << "\'" << " combination " << "\'" << copyOfr << "\'" << " is: " << combination << endl;
 
     return 0;
 }
