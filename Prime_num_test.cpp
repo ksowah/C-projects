@@ -1,4 +1,6 @@
 
+//This program tells if 
+//a number is a prime number
 #include<iostream>
 using namespace std;
 
