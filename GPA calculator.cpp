@@ -4,7 +4,7 @@ using namespace std;
 
 
 
-
+//this function sums the values in array
 int sumGradePoint(double gradePoint[], int numOfCourses){
 
     {
@@ -34,6 +34,7 @@ int main()
 
     double gradePoint[numOfCourses - 1];
 
+    //gradepoints collected into array
     for(int i = 0; i < numOfCourses; i++){
         cout << "Enter grade point: ";
         cin >> gradePoint[i];
@@ -45,7 +46,7 @@ int main()
 
           cout << "\nYour GPA is: " << gpa;
 
-          if (gpa >= 3.6 && gpa <= 4.0){              //gpa classification
+          if (gpa >= 3.6 && gpa <= 4.0){          //gpa classification
             cout << "\n\nFirst Class\n\n";
         }else if(gpa >= 3.0 && gpa <= 3.599){
             cout << "\n\nSecond Class (Upper Division)\n\n";
@@ -64,9 +65,11 @@ int main()
         cout << "Your performance chart is shown below: \n\n";
 
 
+    
+        //Performance chart
          int j = 0;
 
-        while((int)(gradePoint[j]) != 0){
+        while((int)(gradePoint[j]) != 0){ /*casting grades with decimal points to int*/
 
             gradePoint[j] -= 1;
             cout << "[#";
