@@ -11,6 +11,8 @@ int main()
 {
     int n;
     bool prime = true;
+    
+    //Take user input
     cout << "Enter number: ";
     cin >> n;
     cout << endl;
