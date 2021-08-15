@@ -3,11 +3,11 @@
 using namespace std;
 
 
-int product(int copyOfn, int numerator[]){  /*function to get the product of the prime values in the array*/
+long long product(int copyOfn, int numerator[]){  /*function to get the product of the prime values in the array*/
 
 {
 
-    int top = 1;
+    long long top = 1;
 
     for( int i = 0; i < copyOfn; i++)
 
@@ -17,10 +17,10 @@ int product(int copyOfn, int numerator[]){  /*function to get the product of the
 
 }
 
-int denProductA(int copyOfDenA, int denA[]){    /*function to get the product of the prime values in the array of the denominator*/
+long long denProductA(int copyOfDenA, int denA[]){    /*function to get the product of the prime values in the array of the denominator*/
 
     {
-    int downA = 1;
+    long long downA = 1;
 
     for(int i = 0; i < copyOfDenA; i++)
 
@@ -30,11 +30,11 @@ int denProductA(int copyOfDenA, int denA[]){    /*function to get the product of
 
 }
 
-int denProductB(int copyOfr, int denB[]){      /*function to get the product of the prime values in the array of the second part of the denominator*/
+long long denProductB(int copyOfr, int denB[]){      /*function to get the product of the prime values in the array of the second part of the denominator*/
 
 
 {
-      int downB = 1;
+      long long downB = 1;
 
       for(int i = 0; i < copyOfr; i++)
 
@@ -68,7 +68,7 @@ int main()
    }
 
 
-    int top = product(copyOfn, numerator);
+    long long top = product(copyOfn, numerator);
 
     int j = 0;
     int denomenatorA = copyOfn - r;
@@ -84,7 +84,7 @@ int main()
         denomenatorA = denomenatorA - 1;
     }
 
-    int denoA = denProductA(copyOfDenA, denA);
+    long long denoA = denProductA(copyOfDenA, denA);
 
     int copyOfr = r;
     int denB[r - 1];
@@ -97,9 +97,9 @@ int main()
         r = r - 1;
     }
 
-    int denoB = denProductB(copyOfr, denB);
+    long long denoB = denProductB(copyOfr, denB);
 
-    int finalDenomenator = (denoA * denoB);
+    long long finalDenomenator = (denoA * denoB);
 
     int combination = top / (finalDenomenator);
 
