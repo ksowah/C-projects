@@ -1,5 +1,4 @@
 #include<iostream>
-#include <cstdlib>  // Enables use of rand()
 #include<iostream>
 using namespace std;
 
