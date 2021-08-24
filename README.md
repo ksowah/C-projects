@@ -1,3 +1,3 @@
 # C-projects
-This repository contains all my c++ projects
+This repository contains all my c++ practice projects
 
