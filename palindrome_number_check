@@ -21,6 +21,12 @@ int main() {
             number /= 10;
 
         }
+        
+        
+            last = number % 10;
+            reversed = reversed * 10 + last;
+            number /= 10;
+
 
    if(reversed == copyOfNum){
 
