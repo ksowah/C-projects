@@ -21,3 +21,14 @@ int main() {
             number /= 10;
 
         }
+
+   if(reversed == copyOfNum){
+
+                cout << "'" << copyOfNum << "'" << " is a palindrome number\n";
+
+            }else{
+
+            cout << "'" << copyOfNum << "'" << " is not a palindrome number\n";
+
+            }
+
