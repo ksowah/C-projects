@@ -10,6 +10,8 @@ using namespace std;
 int main()
 {
 
+    // varriables to store user data 
+        
         string fname;
         string lname;
         string userName;
@@ -26,7 +28,11 @@ int main()
         cout << "Enter response: ";
         cin >> response;
 
+    // conditional statement to put user in controle
+        
         if (response == 1){
+                
+        //   create and write to file      
 
             cout << "Please enter first name: ";
         cin >> fname;
@@ -66,6 +72,9 @@ int main()
 
         }else if(response == 0){
 
+                
+       // read file         
+                
             string myData;
 
             cout << "Please enter user name: ";
