@@ -73,7 +73,7 @@ int main()
             cout << "Please enter password: ";
             cin >> password;
                 
-                cout << "\n" << userName + " welcome to your dash board\n";
+                cout << "\n" << + "welcome to your dash board " +  userName << endl;
                 cout << "Your personal data is displayed below\n";
 
             ifstream login("C:\\Users\\user\\Desktop\\pract_cpp\\" + userName + password + ".txt");
