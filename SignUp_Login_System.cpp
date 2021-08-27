@@ -77,7 +77,7 @@ int main()
 
             while (getline(login, myData)){
 
-                cout << myData;
+                cout << myData << endl;
 
             }
 
