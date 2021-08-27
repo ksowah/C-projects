@@ -61,9 +61,9 @@ int main()
 
         ofstream database("C:\\Users\\user\\Desktop\\pract_cpp\\" + userName + password + ".txt");
 
-        database << fname << endl << lname << endl << userName << endl
-        << password << endl << gender << endl << email << endl << dateOfBirth
-        << endl << age << endl << nationality << endl;
+        database << "First name: " << fname << endl << "Last name: " << lname << endl << "Username: " << userName << endl
+        << "Password: " << password << endl << "Gender: " << gender << endl << "Email: " << email << endl << "Date of Birth: " << dateOfBirth
+        << endl << "Age: " << age << endl << "Nationality: " << nationality << endl;
 
         cout << "File created successfully";
 
