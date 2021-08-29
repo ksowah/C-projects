@@ -59,7 +59,7 @@ int main()
 
         }
 
-        ofstream database("C:\\Users\\user\\Desktop\\pract_cpp\\" + userName + password + ".txt");
+        ofstream database(userName + password + ".txt");
 
         database << "First name: " << fname << endl << "Last name: " << lname << endl << "Username: " << userName << endl
         << "Password: " << password << endl << "Gender: " << gender << endl << "Email: " << email << endl << "Date of Birth: " << dateOfBirth
@@ -85,7 +85,7 @@ int main()
                 cout << "\n" << + "welcome to your dash board " +  userName << endl;
                 cout << "Your personal data is displayed below\n\n";
 
-            ifstream login("C:\\Users\\user\\Desktop\\pract_cpp\\" + userName + password + ".txt");
+            ifstream login(userName + password + ".txt");
 
             while (getline(login, myData)){
 
