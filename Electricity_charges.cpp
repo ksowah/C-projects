@@ -10,11 +10,14 @@ int main()
     string category;
     double monthlyBill;
     
+    // take user details
     cout << "please enter your name: ";
     getline(cin, customerName);
     cout << "please enter quantity of elcectricity used: ";
     cin >> quantityOfElectricity;
     
+    
+    /* categorise the user into domestic, industrial and commercial depending on electricity consumed */
     if (quantityOfElectricity <= 150){
         
         category = "domestic";
@@ -31,23 +34,24 @@ int main()
     }
     
     
-    
+    // Rural electrification charge
     double ruralElectrification = 0.01 * monthlyBill;
     
      monthlyBill += ruralElectrification;
     
+    // government subsidy
     double governmentSubsidy = 0.5 * monthlyBill;
     
      monthlyBill -= governmentSubsidy;
     
-    cout << endl << "==============================" << endl;
+    cout << endl << "=================================" << endl;
     cout << "Name: " << customerName << endl;
     cout << "Electricity consumed: " << quantityOfElectricity << "kw" << endl;
     cout << category << " user" << endl;
     cout << "1% rural electrification: " << ruralElectrification << endl;
     cout << "50% Government Subsidy: " << governmentSubsidy << endl;
     cout << "Final balance to be paid: " << monthlyBill << endl;
-    cout << endl << "==============================" << endl;
+    cout << endl << "=================================" << endl;
     
 
     return 0;
