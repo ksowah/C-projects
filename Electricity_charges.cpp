@@ -48,9 +48,9 @@ int main()
     cout << "Name: " << customerName << endl;
     cout << "Electricity consumed: " << quantityOfElectricity << "kw" << endl;
     cout << category << " user" << endl;
-    cout << "1% rural electrification: " << ruralElectrification << endl;
-    cout << "50% Government Subsidy: " << governmentSubsidy << endl;
-    cout << "Final balance to be paid: " << monthlyBill << endl;
+    cout << "1% rural electrification: " << ruralElectrification << " GHC" << endl;
+    cout << "50% Government Subsidy: " << governmentSubsidy << " GHC" << endl;
+    cout << "Final balance to be paid: " << monthlyBill << " GHC" << endl;
     cout << endl << "=================================" << endl;
     
 
