@@ -17,11 +17,13 @@ int main()
   float charge = price * 0.02;
   price += charge;
   
-  cout << "Shelve secured.\n\n";
+  cout << "=========================================";
+  cout << "\n\nShelve secured.\n";
   cout << "Product name: " << product << endl;
   cout << "Product price: " << copyOfPrice << endl;
   cout << "2% charge: " << charge << endl;
   cout << "new price: " << price;
+  cout << "=========================================";
   
   
   
