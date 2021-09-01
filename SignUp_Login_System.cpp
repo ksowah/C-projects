@@ -65,7 +65,7 @@ int main()
         << "Password: " << password << endl << "Gender: " << gender << endl << "Email: " << email << endl << "Date of Birth: " << dateOfBirth
         << endl << "Age: " << age << endl << "Nationality: " << nationality << endl;
 
-        cout << "File created successfully";
+        cout << "Account created successfully";
 
         database.close();
 
@@ -82,7 +82,7 @@ int main()
             cout << "Please enter password: ";
             cin >> password;
 
-                cout << "\n" << + "welcome to your dash board " +  userName << endl;
+                cout << "\n" << + "welcome to your dash board " +  userName << "," << endl;
                 cout << "Your personal data is displayed below\n\n";
 
             ifstream login(userName + password + ".txt");
