@@ -44,7 +44,22 @@ int main()
       
   }else if(response == 1){
       
-      ifstream readitem(product + ".txt"); 
+      string myProduct;
+      
+      cout << "Please enter product name: ";
+      cin >> product;
+      
+      cout << endl;
+      cout << product << " has a shelf in our store" << endl;
+
+     ifstream readItem(product + ".txt");        
+            
+      while (getline(readItem, myProduct)){
+          
+          cout << myProduct << endl;
+          
+      }      
+      
       
   }
   
