@@ -22,7 +22,7 @@ int main()
   cout << "Product name: " << product << endl;
   cout << "Product price: " << copyOfPrice << endl;
   cout << "2% charge: " << charge << endl;
-  cout << "new price: " << price;
+  cout << "new price: " << price << endl;
   cout << "=========================================";
   
   
