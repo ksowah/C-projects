@@ -19,7 +19,7 @@ int main()
   
   if (response == 0){
       
-        
+   // create new file for new registration
   cout << "Enter name of product: ";
   cin >> product;
   cout << "Enter price: ";
@@ -43,6 +43,8 @@ int main()
   cout << "\nShelve successfully secured";
       
   }else if(response == 1){
+      
+      // view file
       
       string myProduct;
       
