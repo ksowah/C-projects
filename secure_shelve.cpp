@@ -10,7 +10,7 @@ int main()
   float price;
   
   int response;
-  
+  // take user response
   cout << "To secure a shelf enter '0'\n";
   cout << "To read shelf code enter '1'\n";
   cout << "Enter response: ";
