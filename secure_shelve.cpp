@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <cstdlib>  
+#include <ctime>  
+
 using namespace std;
 
 int main()
@@ -8,6 +11,9 @@ int main()
     
   string product;
   float price;
+  
+   srand(time(0));
+  int ticketCode =  (rand() % 1000) + 1000;
   
   int response;
   // take user response
@@ -35,7 +41,8 @@ int main()
   
   item << "=========================================" << endl <<
   "\nYOUR SHELVE HAS BEEN SECURED\n" << endl << "product name: " << product << endl <<
-  "Product price: " << copyOfPrice << endl << "2% charge: " << charge << endl << "new price: " << price <<
+  "Product code: " << ticketCode << endl << "Product price: " << copyOfPrice << endl << "2% charge: " << 
+  charge << endl << "new price: " << price <<
   endl << "\n=========================================";
   
   item.close();
