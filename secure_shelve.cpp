@@ -22,7 +22,7 @@ int main()
    // create new file for new registration
   cout << "Enter name of product: ";
   cin >> product;
-  cout << "Enter price: ";
+  cout << "Enter price (per unit): ";
   cin >> price;
   
   
